@@ -1,0 +1,34 @@
+    Directory: C:\Users\jarro\workspace\amf-resolver
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        09/02/2021     21:10                covid19-data-tracking-api
+d-----        09/02/2021     20:54                node_modules
+-a----        09/02/2021     22:04             25 .gitignore
+-a----        09/02/2021     22:07         139539 file.json
+-a----        09/02/2021     20:54         105278 package-lock.json
+-a----        09/02/2021     20:54            289 package.json
+-a----        09/02/2021     21:55           1068 parse.js
+-a----        09/02/2021     22:07           1053 README.md
+-a----        09/02/2021     21:55           1097 resolve.js
+
+
+PS C:\Users\jarro\workspace\amf-resolver> node .\parse.js
+File ready
+PS C:\Users\jarro\workspace\amf-resolver> node .\resolve.js
+Parsing unresolved model
+Resolving model using editing pipeline
+Cannot read property 'FP' of null
+TypeError: Cannot read property 'FP' of null
+    at LFb (C:\Users\jarro\workspace\amf-resolver\node_modules\amf-client-js\amf.js:4518:418)
+    at JFb (C:\Users\jarro\workspace\amf-resolver\node_modules\amf-client-js\amf.js:4517:72)
+    at C:\Users\jarro\workspace\amf-resolver\node_modules\amf-client-js\amf.js:4516:73
+    at irb.U (C:\Users\jarro\workspace\amf-resolver\node_modules\amf-client-js\amf.js:3339:226)
+    at C:\Users\jarro\workspace\amf-resolver\node_modules\amf-client-js\amf.js:5668:244
+    at irb.U (C:\Users\jarro\workspace\amf-resolver\node_modules\amf-client-js\amf.js:3339:226)
+    at gm.d.W (C:\Users\jarro\workspace\amf-resolver\node_modules\amf-client-js\amf.js:9513:215)
+    at zD (C:\Users\jarro\workspace\amf-resolver\node_modules\amf-client-js\amf.js:5668:191)
+    at gm.d.yc (C:\Users\jarro\workspace\amf-resolver\node_modules\amf-client-js\amf.js:8344:27)
+    at IFb (C:\Users\jarro\workspace\amf-resolver\node_modules\amf-client-js\amf.js:4516:124)
+PS C:\Users\jarro\workspace\amf-resolver>
