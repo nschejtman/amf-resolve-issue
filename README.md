@@ -12,7 +12,13 @@ This works as expected on Linux and on macOS! **This has to be tested on Windows
 
 ## steps to reproduce
 
-`1.` Run the parsing script that parses an API and produces ld+json graph model.
+`1.` Install dependencies
+
+```sh
+npm i
+```
+
+`2.` Run the parsing script that parses an API and produces ld+json graph model.
 
 ```sh
 node parse.js
@@ -20,7 +26,7 @@ node parse.js
 
 This generates the `file.json` with the result of the parsing process.
 
-`2.` Run the resolver process that parses generated ld+json file and resolves the model.
+`3.` Run the resolver process that parses generated ld+json file and resolves the model.
 
 ```sh
 node resolve.js
