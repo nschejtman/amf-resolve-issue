@@ -20,9 +20,9 @@ amf.plugins.features.AMFValidation.register();
     const doc = await parser.parseFileAsync(file);
 
     const generator = amf.Core.generator('AMF Graph', 'application/ld+json');
-    const opts = amf.render.RenderOptions().withSourceMaps.withCompactUris;
+    const opts = amf.render.RenderOptions().withSourceMaps.withCompactUris.withPrettyPrint;
     const unresolved = await generator.generateString(doc, opts);
-    await fs.writeFile('file.json', unresolved, 'utf-8');
+    await fs.writeFile(`dumped-{JS}-{${process.platform}}.jsonld`, unresolved, 'utf-8');
     console.log('File ready');
   } catch (e) {
     console.error(e.message || e.toString());

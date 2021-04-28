@@ -7,7 +7,7 @@ amf.plugins.features.AMFValidation.register();
 
 (async () => {
 
-  const model = await fs.readFile('./file.json', 'utf-8');
+  const model = await fs.readFile(`./dumped-{JS}-{${process.platform}}.jsonld`, 'utf-8');
   const type = 'RAML 1.0';
   await amf.Core.init();
 
